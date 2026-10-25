@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Some Customer's Website (not FlyRank)</title>
+  <style>
+    body { font-family: sans-serif; max-width: 640px; margin: 60px auto; }
+    header { border-bottom: 2px solid #333; padding-bottom: 12px; margin-bottom: 24px; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Acme Cupcakes</h1>
+    <p>This page is served from a different origin than the widget API —
+       that's the whole point. Serve it with <code>npx serve test-site -l 5500</code>
+       (or any static server on a different port) and open it in the browser,
+       not via <code>file://</code>, so the console errors are real ones.</p>
+  </header>
+
+  <p>Sign up for cupcake news below 👇 — this form is not ours, it's embedded:</p>
+
+  <!-- Replace the ?id= value with a real widget id from `npm run seed` output -->
+  <script src="http://localhost:3000/widget.js?id=REPLACE_WITH_WIDGET_ID" async></script>
+</body>
+</html>

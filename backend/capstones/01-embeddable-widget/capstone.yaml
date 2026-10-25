@@ -1,0 +1,18 @@
+name: Embeddable Widget & Lead-Capture Platform
+run: docker compose up -d && npm install && npm run migrate && npm start
+seed: npm run seed
+test: null
+base_url: http://localhost:3000
+endpoints:
+  - POST /auth/register
+  - POST /auth/login
+  - GET  /widgets
+  - POST /widgets
+  - GET  /widgets/:id
+  - PUT  /widgets/:id
+  - DELETE /widgets/:id
+  - GET  /widget.js
+  - GET  /widgets/:id/config
+  - POST /submissions
+  - GET  /dashboard/submissions
+  - GET  /dashboard/stats

@@ -1,12 +1,8 @@
-# Dependencies — none in this repo (planning index only)
+# Dependencies
 node_modules/
 
 # Environment — never commit secrets
 .env
-
-# The capstone 01 subfolder is its own git repo; exclude it from this index repo
-# so git doesn't try to track it as a nested repo or untracked submodule.
-backend/capstones/01-embeddable-widget/
 
 # OS
 .DS_Store
